@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YMT.projects.classes.Proxy;
 
-namespace YMT
+namespace YMT.projects
 {
-	public partial class Form1 : Form
+	public partial class ProxyForm : Form
 	{
-		public Form1()
+		public ProxyForm()
 		{
 			InitializeComponent();
 		}

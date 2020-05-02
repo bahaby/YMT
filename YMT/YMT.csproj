@@ -46,14 +46,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="projects\AbstractFactoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\AbstractFactoryForm.Designer.cs">
+      <DependentUpon>AbstractFactoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\AdapterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\AdapterForm.Designer.cs">
+      <DependentUpon>AdapterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\BridgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\BridgeForm.Designer.cs">
+      <DependentUpon>BridgeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\BuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\BuilderForm.Designer.cs">
+      <DependentUpon>BuilderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\classes\AbstractFactory\Test.cs" />
+    <Compile Include="projects\classes\Adapter\Test.cs" />
+    <Compile Include="projects\classes\Bridge\Test.cs" />
+    <Compile Include="projects\classes\Builder\Test.cs" />
+    <Compile Include="projects\classes\Facade\Test.cs" />
+    <Compile Include="projects\classes\Factory\Test.cs" />
+    <Compile Include="projects\classes\Prototype\Test.cs" />
+    <Compile Include="projects\classes\Proxy\Test.cs" />
+    <Compile Include="projects\classes\Singleton\Test.cs" />
+    <Compile Include="projects\FacadeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\FacadeForm.Designer.cs">
+      <DependentUpon>FacadeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\FactoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\FactoryForm.Designer.cs">
+      <DependentUpon>FactoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\PrototypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\PrototypeForm.Designer.cs">
+      <DependentUpon>PrototypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\ProxyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\ProxyForm.Designer.cs">
+      <DependentUpon>ProxyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="projects\SingletonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="projects\SingletonForm.Designer.cs">
+      <DependentUpon>SingletonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\SingletonForm.resx">
+      <DependentUpon>SingletonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,5 +145,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
