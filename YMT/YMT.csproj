@@ -82,7 +82,17 @@
     <Compile Include="projects\classes\Bridge\Test.cs" />
     <Compile Include="projects\classes\Builder\Test.cs" />
     <Compile Include="projects\classes\Facade\Test.cs" />
-    <Compile Include="projects\classes\Factory\Test.cs" />
+    <Compile Include="projects\classes\Factory\Book.cs" />
+    <Compile Include="projects\classes\Factory\Buy.cs" />
+    <Compile Include="projects\classes\Factory\Cash.cs" />
+    <Compile Include="projects\classes\Factory\CreditCard.cs" />
+    <Compile Include="projects\classes\Factory\IOrder.cs" />
+    <Compile Include="projects\classes\Factory\IPurchase.cs" />
+    <Compile Include="projects\classes\Factory\Notebook.cs" />
+    <Compile Include="projects\classes\Factory\Pencil.cs" />
+    <Compile Include="projects\classes\Factory\IProduct.cs" />
+    <Compile Include="projects\classes\Factory\ProductFactory.cs" />
+    <Compile Include="projects\classes\Factory\Rent.cs" />
     <Compile Include="projects\classes\Prototype\Test.cs" />
     <Compile Include="projects\classes\Proxy\Test.cs" />
     <Compile Include="projects\classes\Singleton\Test.cs" />
@@ -119,6 +129,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\FactoryForm.resx">
+      <DependentUpon>FactoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\SingletonForm.resx">
       <DependentUpon>SingletonForm.cs</DependentUpon>

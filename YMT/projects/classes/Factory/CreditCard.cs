@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Factory
 {
-	class Test
+	class CreditCard:IPurchase
 	{
+		public bool Purchase()
+		{
+			return true;
+		}
 	}
 }
