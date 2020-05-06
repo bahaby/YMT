@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Factory
 {
-	class Pencil:IProduct
+	class Pencil: Product, IProduct
 	{
 		public String ProductName()
 		{

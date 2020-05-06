@@ -12,5 +12,9 @@ namespace YMT.projects.classes.Factory
 		{
 			return true;
 		}
+		public String Feedback()
+		{
+			return "There is no problem with Renting.";
+		}
 	}
 }

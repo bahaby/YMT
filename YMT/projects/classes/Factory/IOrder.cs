@@ -9,5 +9,6 @@ namespace YMT.projects.classes.Factory
 	public interface IOrder
 	{
 		bool Order();
+		String Feedback();
 	}
 }

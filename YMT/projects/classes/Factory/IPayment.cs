@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Factory
 {
-	public interface IPurchase
+	public interface IPayment
 	{
-		bool Purchase();
+		bool Pay();
+		String Feedback();
 	}
 }

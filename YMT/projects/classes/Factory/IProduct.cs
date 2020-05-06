@@ -9,5 +9,7 @@ namespace YMT.projects.classes.Factory
 	public interface IProduct
 	{
 		String ProductName();
+		void AddQuantity();
+		int Quantity();
 	}
 }

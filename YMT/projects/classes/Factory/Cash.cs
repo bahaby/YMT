@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Factory
 {
-	class Cash:IPurchase
+	class Cash:IPayment
 	{
-		public bool Purchase()
+		public bool Pay()
 		{
 			return true;
+		}
+		public String Feedback()
+		{
+			return "Order completed with Cash";
 		}
 	}
 }

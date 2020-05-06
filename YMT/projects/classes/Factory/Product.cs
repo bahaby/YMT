@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Factory
 {
-	class CreditCard:IPayment
+	class Product
 	{
-		public bool Pay()
+		private int _quantity = 1;
+		public void AddQuantity()
 		{
-			return true;
+			this._quantity += 1;
 		}
-		public String Feedback()
+		public int Quantity()
 		{
-			return "Order completed with Credit Card";
+			return _quantity;
 		}
 	}
 }

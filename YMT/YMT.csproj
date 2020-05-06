@@ -87,10 +87,13 @@
     <Compile Include="projects\classes\Factory\Cash.cs" />
     <Compile Include="projects\classes\Factory\CreditCard.cs" />
     <Compile Include="projects\classes\Factory\IOrder.cs" />
-    <Compile Include="projects\classes\Factory\IPurchase.cs" />
+    <Compile Include="projects\classes\Factory\IPayment.cs" />
     <Compile Include="projects\classes\Factory\Notebook.cs" />
+    <Compile Include="projects\classes\Factory\OrderFactory.cs" />
+    <Compile Include="projects\classes\Factory\PaymentFactory.cs" />
     <Compile Include="projects\classes\Factory\Pencil.cs" />
     <Compile Include="projects\classes\Factory\IProduct.cs" />
+    <Compile Include="projects\classes\Factory\Product.cs" />
     <Compile Include="projects\classes\Factory\ProductFactory.cs" />
     <Compile Include="projects\classes\Factory\Rent.cs" />
     <Compile Include="projects\classes\Prototype\Test.cs" />
