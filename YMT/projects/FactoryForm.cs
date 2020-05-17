@@ -15,6 +15,8 @@ namespace YMT.projects
 	{
 
 		ProductFactory productFactory = new ProductFactory();
+		OrderFactory orderFactory = new OrderFactory();
+		PaymentFactory paymentFactory = new PaymentFactory();
 		List<IProduct> order = new List<IProduct>();
 
 		public FactoryForm()
@@ -44,8 +46,6 @@ namespace YMT.projects
 
 		private void btnOrder_Click(object sender, EventArgs e)
 		{
-			OrderFactory orderFactory = new OrderFactory();
-			PaymentFactory paymentFactory = new PaymentFactory();
 			IPayment paymentData = paymentFactory.CreatePayment(cboxPayment.SelectedIndex);
 			IOrder orderData = orderFactory.CreateOrder(cboxOrder.SelectedIndex);
 

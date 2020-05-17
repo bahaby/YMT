@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.btnAbstractFactory = new System.Windows.Forms.Button();
 			this.btnAdapter = new System.Windows.Forms.Button();
 			this.btnBridge = new System.Windows.Forms.Button();
 			this.btnBuilder = new System.Windows.Forms.Button();
@@ -37,21 +36,20 @@
 			this.btnPrototype = new System.Windows.Forms.Button();
 			this.btnProxy = new System.Windows.Forms.Button();
 			this.btnSingleton = new System.Windows.Forms.Button();
+			this.btnAbstractFactory = new System.Windows.Forms.Button();
+			this.grpOnur = new System.Windows.Forms.GroupBox();
+			this.grpHakan = new System.Windows.Forms.GroupBox();
+			this.grpHasan = new System.Windows.Forms.GroupBox();
+			this.grpBaha = new System.Windows.Forms.GroupBox();
+			this.grpOnur.SuspendLayout();
+			this.grpHakan.SuspendLayout();
+			this.grpHasan.SuspendLayout();
+			this.grpBaha.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// btnAbstractFactory
-			// 
-			this.btnAbstractFactory.Location = new System.Drawing.Point(243, 230);
-			this.btnAbstractFactory.Name = "btnAbstractFactory";
-			this.btnAbstractFactory.Size = new System.Drawing.Size(274, 23);
-			this.btnAbstractFactory.TabIndex = 0;
-			this.btnAbstractFactory.Text = "Abstract Factory";
-			this.btnAbstractFactory.UseVisualStyleBackColor = true;
-			this.btnAbstractFactory.Click += new System.EventHandler(this.btnAbstractFactory_Click);
 			// 
 			// btnAdapter
 			// 
-			this.btnAdapter.Location = new System.Drawing.Point(243, 259);
+			this.btnAdapter.Location = new System.Drawing.Point(31, 48);
 			this.btnAdapter.Name = "btnAdapter";
 			this.btnAdapter.Size = new System.Drawing.Size(274, 23);
 			this.btnAdapter.TabIndex = 0;
@@ -61,7 +59,7 @@
 			// 
 			// btnBridge
 			// 
-			this.btnBridge.Location = new System.Drawing.Point(243, 288);
+			this.btnBridge.Location = new System.Drawing.Point(31, 48);
 			this.btnBridge.Name = "btnBridge";
 			this.btnBridge.Size = new System.Drawing.Size(274, 23);
 			this.btnBridge.TabIndex = 0;
@@ -71,7 +69,7 @@
 			// 
 			// btnBuilder
 			// 
-			this.btnBuilder.Location = new System.Drawing.Point(243, 317);
+			this.btnBuilder.Location = new System.Drawing.Point(31, 52);
 			this.btnBuilder.Name = "btnBuilder";
 			this.btnBuilder.Size = new System.Drawing.Size(274, 23);
 			this.btnBuilder.TabIndex = 0;
@@ -81,7 +79,7 @@
 			// 
 			// btnFacade
 			// 
-			this.btnFacade.Location = new System.Drawing.Point(243, 346);
+			this.btnFacade.Location = new System.Drawing.Point(31, 19);
 			this.btnFacade.Name = "btnFacade";
 			this.btnFacade.Size = new System.Drawing.Size(274, 23);
 			this.btnFacade.TabIndex = 0;
@@ -91,7 +89,7 @@
 			// 
 			// btnFactory
 			// 
-			this.btnFactory.Location = new System.Drawing.Point(243, 375);
+			this.btnFactory.Location = new System.Drawing.Point(31, 19);
 			this.btnFactory.Name = "btnFactory";
 			this.btnFactory.Size = new System.Drawing.Size(274, 23);
 			this.btnFactory.TabIndex = 0;
@@ -101,7 +99,7 @@
 			// 
 			// btnPrototype
 			// 
-			this.btnPrototype.Location = new System.Drawing.Point(243, 404);
+			this.btnPrototype.Location = new System.Drawing.Point(31, 77);
 			this.btnPrototype.Name = "btnPrototype";
 			this.btnPrototype.Size = new System.Drawing.Size(274, 23);
 			this.btnPrototype.TabIndex = 0;
@@ -111,7 +109,7 @@
 			// 
 			// btnProxy
 			// 
-			this.btnProxy.Location = new System.Drawing.Point(243, 433);
+			this.btnProxy.Location = new System.Drawing.Point(31, 48);
 			this.btnProxy.Name = "btnProxy";
 			this.btnProxy.Size = new System.Drawing.Size(274, 27);
 			this.btnProxy.TabIndex = 0;
@@ -121,7 +119,7 @@
 			// 
 			// btnSingleton
 			// 
-			this.btnSingleton.Location = new System.Drawing.Point(243, 466);
+			this.btnSingleton.Location = new System.Drawing.Point(31, 19);
 			this.btnSingleton.Name = "btnSingleton";
 			this.btnSingleton.Size = new System.Drawing.Size(274, 27);
 			this.btnSingleton.TabIndex = 0;
@@ -129,29 +127,81 @@
 			this.btnSingleton.UseVisualStyleBackColor = true;
 			this.btnSingleton.Click += new System.EventHandler(this.btnSingleton_Click);
 			// 
+			// btnAbstractFactory
+			// 
+			this.btnAbstractFactory.Location = new System.Drawing.Point(31, 19);
+			this.btnAbstractFactory.Name = "btnAbstractFactory";
+			this.btnAbstractFactory.Size = new System.Drawing.Size(274, 23);
+			this.btnAbstractFactory.TabIndex = 0;
+			this.btnAbstractFactory.Text = "Abstract Factory";
+			this.btnAbstractFactory.UseVisualStyleBackColor = true;
+			this.btnAbstractFactory.Click += new System.EventHandler(this.btnAbstractFactory_Click);
+			// 
+			// grpOnur
+			// 
+			this.grpOnur.Controls.Add(this.btnFacade);
+			this.grpOnur.Controls.Add(this.btnProxy);
+			this.grpOnur.Location = new System.Drawing.Point(12, 12);
+			this.grpOnur.Name = "grpOnur";
+			this.grpOnur.Size = new System.Drawing.Size(338, 88);
+			this.grpOnur.TabIndex = 1;
+			this.grpOnur.TabStop = false;
+			this.grpOnur.Text = "Onur Göz";
+			// 
+			// grpHakan
+			// 
+			this.grpHakan.Controls.Add(this.btnAbstractFactory);
+			this.grpHakan.Controls.Add(this.btnBridge);
+			this.grpHakan.Location = new System.Drawing.Point(12, 106);
+			this.grpHakan.Name = "grpHakan";
+			this.grpHakan.Size = new System.Drawing.Size(338, 88);
+			this.grpHakan.TabIndex = 1;
+			this.grpHakan.TabStop = false;
+			this.grpHakan.Text = "Hakan Sarı";
+			// 
+			// grpHasan
+			// 
+			this.grpHasan.Controls.Add(this.btnSingleton);
+			this.grpHasan.Controls.Add(this.btnBuilder);
+			this.grpHasan.Location = new System.Drawing.Point(12, 200);
+			this.grpHasan.Name = "grpHasan";
+			this.grpHasan.Size = new System.Drawing.Size(338, 88);
+			this.grpHasan.TabIndex = 1;
+			this.grpHasan.TabStop = false;
+			this.grpHasan.Text = "Hasan";
+			// 
+			// grpBaha
+			// 
+			this.grpBaha.Controls.Add(this.btnFactory);
+			this.grpBaha.Controls.Add(this.btnAdapter);
+			this.grpBaha.Controls.Add(this.btnPrototype);
+			this.grpBaha.Location = new System.Drawing.Point(12, 294);
+			this.grpBaha.Name = "grpBaha";
+			this.grpBaha.Size = new System.Drawing.Size(338, 116);
+			this.grpBaha.TabIndex = 1;
+			this.grpBaha.TabStop = false;
+			this.grpBaha.Text = "Bahadır Bayraktar";
+			// 
 			// Main
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(761, 755);
-			this.Controls.Add(this.btnSingleton);
-			this.Controls.Add(this.btnProxy);
-			this.Controls.Add(this.btnPrototype);
-			this.Controls.Add(this.btnFactory);
-			this.Controls.Add(this.btnFacade);
-			this.Controls.Add(this.btnBuilder);
-			this.Controls.Add(this.btnBridge);
-			this.Controls.Add(this.btnAdapter);
-			this.Controls.Add(this.btnAbstractFactory);
+			this.ClientSize = new System.Drawing.Size(364, 427);
+			this.Controls.Add(this.grpBaha);
+			this.Controls.Add(this.grpHasan);
+			this.Controls.Add(this.grpHakan);
+			this.Controls.Add(this.grpOnur);
 			this.Name = "Main";
 			this.Text = "Form1";
+			this.grpOnur.ResumeLayout(false);
+			this.grpHakan.ResumeLayout(false);
+			this.grpHasan.ResumeLayout(false);
+			this.grpBaha.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Button btnAbstractFactory;
 		private System.Windows.Forms.Button btnAdapter;
 		private System.Windows.Forms.Button btnBridge;
 		private System.Windows.Forms.Button btnBuilder;
@@ -160,6 +210,11 @@
 		private System.Windows.Forms.Button btnPrototype;
 		private System.Windows.Forms.Button btnProxy;
 		private System.Windows.Forms.Button btnSingleton;
+		private System.Windows.Forms.Button btnAbstractFactory;
+		private System.Windows.Forms.GroupBox grpOnur;
+		private System.Windows.Forms.GroupBox grpHakan;
+		private System.Windows.Forms.GroupBox grpHasan;
+		private System.Windows.Forms.GroupBox grpBaha;
 	}
 }
 
