@@ -168,7 +168,7 @@
 			this.grpHasan.Size = new System.Drawing.Size(338, 88);
 			this.grpHasan.TabIndex = 1;
 			this.grpHasan.TabStop = false;
-			this.grpHasan.Text = "Hasan";
+			this.grpHasan.Text = "Hasan Sofioğlu";
 			// 
 			// grpBaha
 			// 

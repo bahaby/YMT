@@ -16,6 +16,29 @@ namespace YMT.projects
 		public AdapterForm()
 		{
 			InitializeComponent();
+			foreach (var yemek in new YemekListesi().Yemekler)
+			{
+				listYemek.Items.Add(yemek.Ad);
+			}
+			listYemek.SelectedIndex = 0;
+		}
+
+
+		private void btnTarif_Click(object sender, EventArgs e)
+		{
+			TarifGoster tarifGoster = new TarifGoster();
+			MessageBox.Show(
+				tarifGoster.yazdir(listYemek.SelectedItem.ToString())	
+			);
+			
+		}
+
+		private void btnMasraf_Click(object sender, EventArgs e)
+		{
+			MasrafGoster masrafGoster = new MasrafGoster();
+			MessageBox.Show(
+				masrafGoster.yazdir(listYemek.SelectedItem.ToString())
+			);
 		}
 	}
 }

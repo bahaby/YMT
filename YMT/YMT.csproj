@@ -78,7 +78,12 @@
       <DependentUpon>BuilderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="projects\classes\AbstractFactory\Test.cs" />
-    <Compile Include="projects\classes\Adapter\Test.cs" />
+    <Compile Include="projects\classes\Adapter\ITarif.cs" />
+    <Compile Include="projects\classes\Adapter\Malzeme.cs" />
+    <Compile Include="projects\classes\Adapter\MasrafGoster.cs" />
+    <Compile Include="projects\classes\Adapter\TarifGoster.cs" />
+    <Compile Include="projects\classes\Adapter\Yemek.cs" />
+    <Compile Include="projects\classes\Adapter\YemekListesi.cs" />
     <Compile Include="projects\classes\Bridge\Test.cs" />
     <Compile Include="projects\classes\Builder\Test.cs" />
     <Compile Include="projects\classes\Facade\Test.cs" />
@@ -132,6 +137,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\AdapterForm.resx">
+      <DependentUpon>AdapterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\FactoryForm.resx">
       <DependentUpon>FactoryForm.cs</DependentUpon>
