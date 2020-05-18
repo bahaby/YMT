@@ -20,6 +20,8 @@ namespace YMT.projects
 
 		private void button1_Click(object sender, EventArgs e)
 		{
+            //test
+            //bişe ekledin mesela  kaydedince aşağıda kalemin olduğu yerdeki sayı artar
 			List<Tuple<String, String>> liste = new List<Tuple<string, string>>();
 			List<Tuple<int, String>> adaylar = new List<Tuple<int, String>>{
 				new Tuple<int, string>( 2, "Onur"),
