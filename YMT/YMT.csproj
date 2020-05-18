@@ -101,7 +101,11 @@
     <Compile Include="projects\classes\Factory\Product.cs" />
     <Compile Include="projects\classes\Factory\ProductFactory.cs" />
     <Compile Include="projects\classes\Factory\Rent.cs" />
-    <Compile Include="projects\classes\Prototype\Test.cs" />
+    <Compile Include="projects\classes\Prototype\Arcelik.cs" />
+    <Compile Include="projects\classes\Prototype\Beko.cs" />
+    <Compile Include="projects\classes\Prototype\Company.cs" />
+    <Compile Include="projects\classes\Prototype\CompanyHistory.cs" />
+    <Compile Include="projects\classes\Prototype\Monster.cs" />
     <Compile Include="projects\classes\Proxy\Test.cs" />
     <Compile Include="projects\classes\Singleton\Test.cs" />
     <Compile Include="projects\FacadeForm.cs">
@@ -143,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="projects\FactoryForm.resx">
       <DependentUpon>FactoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\PrototypeForm.resx">
+      <DependentUpon>PrototypeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\SingletonForm.resx">
       <DependentUpon>SingletonForm.cs</DependentUpon>

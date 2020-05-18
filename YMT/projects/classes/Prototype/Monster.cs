@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Prototype
 {
-	class Test
+	class Monster : Company
 	{
+		public Monster()
+		{
+			Name = "Monster";
+		}
+		public override Company Clone()
+		{
+			return (Monster)MemberwiseClone(); 
+		}
 	}
 }
