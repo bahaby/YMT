@@ -52,7 +52,7 @@ namespace YMT.projects
 			String message = "";
 			foreach (var orderItem in order)
 			{
-				message += orderItem.ProductName() + "\t\t" + orderItem.Quantity().ToString() + "\n";
+				message += orderItem.Quantity().ToString() + " x " + orderItem.ProductName() + "\n";
 			}
 			message += paymentData.Feedback() + "\n";
 			message += orderData.Feedback() + "\n";
@@ -69,10 +69,11 @@ namespace YMT.projects
 
 		private void refresh()
 		{
-			richTxtOrder.Clear();
+			listOrder.Items.Clear();
 			foreach (var orderItem in order)
 			{
-				richTxtOrder.AppendText(orderItem.ProductName() + "\t\t" + orderItem.Quantity().ToString() + "\n");
+				ListViewItem item = new ListViewItem(new String[] { orderItem.ProductName(), orderItem.Quantity().ToString()});
+				listOrder.Items.Add(item);
 			}
 		}
 		private void AddOrder(IProduct orderItem)
