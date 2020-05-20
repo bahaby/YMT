@@ -86,7 +86,11 @@
     <Compile Include="projects\classes\Adapter\YemekListesi.cs" />
     <Compile Include="projects\classes\Bridge\Test.cs" />
     <Compile Include="projects\classes\Builder\Test.cs" />
-    <Compile Include="projects\classes\Facade\Test.cs" />
+    <Compile Include="projects\classes\Facade\Banka.cs" />
+    <Compile Include="projects\classes\Facade\Facade.cs" />
+    <Compile Include="projects\classes\Facade\Kredi.cs" />
+    <Compile Include="projects\classes\Facade\MerkezBanka.cs" />
+    <Compile Include="projects\classes\Facade\Musteri.cs" />
     <Compile Include="projects\classes\Factory\Book.cs" />
     <Compile Include="projects\classes\Factory\Buy.cs" />
     <Compile Include="projects\classes\Factory\Cash.cs" />
@@ -144,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="projects\AdapterForm.resx">
       <DependentUpon>AdapterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\FacadeForm.resx">
+      <DependentUpon>FacadeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\FactoryForm.resx">
       <DependentUpon>FactoryForm.cs</DependentUpon>
