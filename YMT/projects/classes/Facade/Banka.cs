@@ -1,4 +1,4 @@
-﻿namespace Facade01
+﻿namespace YMT.projects.classes.Facade
 {
     class Banka
     {
