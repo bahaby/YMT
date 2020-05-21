@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="projects\classes\Singleton\ClassSingleton.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,7 +112,6 @@
     <Compile Include="projects\classes\Prototype\CompanyHistory.cs" />
     <Compile Include="projects\classes\Prototype\Monster.cs" />
     <Compile Include="projects\classes\Proxy\Test.cs" />
-    <Compile Include="projects\classes\Singleton\Test.cs" />
     <Compile Include="projects\FacadeForm.cs">
       <SubType>Form</SubType>
     </Compile>
