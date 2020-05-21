@@ -17,5 +17,10 @@ namespace YMT.projects
 		{
 			InitializeComponent();
 		}
+
+		private void AbstractFactoryForm_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

@@ -133,6 +133,12 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="projects\AbstractFactoryForm.resx">
+      <DependentUpon>AbstractFactoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\BridgeForm.resx">
+      <DependentUpon>BridgeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="projects\FactoryForm.resx">
       <DependentUpon>FactoryForm.cs</DependentUpon>
     </EmbeddedResource>

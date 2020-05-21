@@ -17,5 +17,10 @@ namespace YMT.projects
 		{
 			InitializeComponent();
 		}
+
+		private void BridgeForm_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
