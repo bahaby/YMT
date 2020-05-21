@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="projects\classes\Proxy\IGorsel.cs" />
+    <Compile Include="projects\classes\Proxy\Proxy.cs" />
+    <Compile Include="projects\classes\Proxy\Resim.cs" />
     <Compile Include="projects\classes\Singleton\ClassSingleton.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -111,7 +114,6 @@
     <Compile Include="projects\classes\Prototype\Company.cs" />
     <Compile Include="projects\classes\Prototype\CompanyHistory.cs" />
     <Compile Include="projects\classes\Prototype\Monster.cs" />
-    <Compile Include="projects\classes\Proxy\Test.cs" />
     <Compile Include="projects\FacadeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="projects\PrototypeForm.resx">
       <DependentUpon>PrototypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\ProxyForm.resx">
+      <DependentUpon>ProxyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\SingletonForm.resx">
       <DependentUpon>SingletonForm.cs</DependentUpon>
