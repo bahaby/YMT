@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="projects\classes\Singleton\ClassSingleton.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,21 +78,20 @@
     <Compile Include="projects\BuilderForm.Designer.cs">
       <DependentUpon>BuilderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="projects\classes\AbstractFactory\Abstract Products\Shirt.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Abstract Products\Trousers.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Client.cs" />
-    <Compile Include="projects\classes\AbstractFactory\ClothesFactory.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Factories\CasualClothesFactory.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Factories\ElegantClothesFactory.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Products\DressShirt.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Products\Jeans.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Products\PoloShirt.cs" />
-    <Compile Include="projects\classes\AbstractFactory\Products\SuitTrousers.cs" />
     <Compile Include="projects\classes\AbstractFactory\Test.cs" />
-    <Compile Include="projects\classes\Adapter\Test.cs" />
+    <Compile Include="projects\classes\Adapter\ITarif.cs" />
+    <Compile Include="projects\classes\Adapter\Malzeme.cs" />
+    <Compile Include="projects\classes\Adapter\MasrafGoster.cs" />
+    <Compile Include="projects\classes\Adapter\TarifGoster.cs" />
+    <Compile Include="projects\classes\Adapter\Yemek.cs" />
+    <Compile Include="projects\classes\Adapter\YemekListesi.cs" />
     <Compile Include="projects\classes\Bridge\Test.cs" />
     <Compile Include="projects\classes\Builder\Test.cs" />
-    <Compile Include="projects\classes\Facade\Test.cs" />
+    <Compile Include="projects\classes\Facade\Banka.cs" />
+    <Compile Include="projects\classes\Facade\Facade.cs" />
+    <Compile Include="projects\classes\Facade\Kredi.cs" />
+    <Compile Include="projects\classes\Facade\MerkezBanka.cs" />
+    <Compile Include="projects\classes\Facade\Musteri.cs" />
     <Compile Include="projects\classes\Factory\Book.cs" />
     <Compile Include="projects\classes\Factory\Buy.cs" />
     <Compile Include="projects\classes\Factory\Cash.cs" />
@@ -106,9 +106,12 @@
     <Compile Include="projects\classes\Factory\Product.cs" />
     <Compile Include="projects\classes\Factory\ProductFactory.cs" />
     <Compile Include="projects\classes\Factory\Rent.cs" />
-    <Compile Include="projects\classes\Prototype\Test.cs" />
+    <Compile Include="projects\classes\Prototype\Arcelik.cs" />
+    <Compile Include="projects\classes\Prototype\Beko.cs" />
+    <Compile Include="projects\classes\Prototype\Company.cs" />
+    <Compile Include="projects\classes\Prototype\CompanyHistory.cs" />
+    <Compile Include="projects\classes\Prototype\Monster.cs" />
     <Compile Include="projects\classes\Proxy\Test.cs" />
-    <Compile Include="projects\classes\Singleton\Test.cs" />
     <Compile Include="projects\FacadeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,17 +146,17 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="projects\AbstractFactoryForm.resx">
-      <DependentUpon>AbstractFactoryForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="projects\BridgeForm.resx">
-      <DependentUpon>BridgeForm.cs</DependentUpon>
+    <EmbeddedResource Include="projects\AdapterForm.resx">
+      <DependentUpon>AdapterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\FacadeForm.resx">
       <DependentUpon>FacadeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\FactoryForm.resx">
       <DependentUpon>FactoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\PrototypeForm.resx">
+      <DependentUpon>PrototypeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\SingletonForm.resx">
       <DependentUpon>SingletonForm.cs</DependentUpon>

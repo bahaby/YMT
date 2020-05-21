@@ -15,6 +15,8 @@ namespace YMT.projects
 	{
 
 		ProductFactory productFactory = new ProductFactory();
+		OrderFactory orderFactory = new OrderFactory();
+		PaymentFactory paymentFactory = new PaymentFactory();
 		List<IProduct> order = new List<IProduct>();
 
 		public FactoryForm()
@@ -44,15 +46,13 @@ namespace YMT.projects
 
 		private void btnOrder_Click(object sender, EventArgs e)
 		{
-			OrderFactory orderFactory = new OrderFactory();
-			PaymentFactory paymentFactory = new PaymentFactory();
 			IPayment paymentData = paymentFactory.CreatePayment(cboxPayment.SelectedIndex);
 			IOrder orderData = orderFactory.CreateOrder(cboxOrder.SelectedIndex);
 
 			String message = "";
 			foreach (var orderItem in order)
 			{
-				message += orderItem.ProductName() + "\t\t" + orderItem.Quantity().ToString() + "\n";
+				message += orderItem.Quantity().ToString() + " x " + orderItem.ProductName() + "\n";
 			}
 			message += paymentData.Feedback() + "\n";
 			message += orderData.Feedback() + "\n";
@@ -69,10 +69,11 @@ namespace YMT.projects
 
 		private void refresh()
 		{
-			richTxtOrder.Clear();
+			listOrder.Items.Clear();
 			foreach (var orderItem in order)
 			{
-				richTxtOrder.AppendText(orderItem.ProductName() + "\t\t" + orderItem.Quantity().ToString() + "\n");
+				ListViewItem item = new ListViewItem(new String[] { orderItem.ProductName(), orderItem.Quantity().ToString()});
+				listOrder.Items.Add(item);
 			}
 		}
 		private void AddOrder(IProduct orderItem)
