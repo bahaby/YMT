@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="projects\classes\Builder\Test.cs" />
     <Compile Include="projects\classes\Proxy\IGorsel.cs" />
     <Compile Include="projects\classes\Proxy\Proxy.cs" />
     <Compile Include="projects\classes\Proxy\Resim.cs" />
@@ -89,7 +90,6 @@
     <Compile Include="projects\classes\Adapter\Yemek.cs" />
     <Compile Include="projects\classes\Adapter\YemekListesi.cs" />
     <Compile Include="projects\classes\Bridge\Test.cs" />
-    <Compile Include="projects\classes\Builder\Test.cs" />
     <Compile Include="projects\classes\Facade\Banka.cs" />
     <Compile Include="projects\classes\Facade\Facade.cs" />
     <Compile Include="projects\classes\Facade\Kredi.cs" />
