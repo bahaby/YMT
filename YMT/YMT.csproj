@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="projects\classes\Builder\Test.cs" />
+    <Compile Include="projects\classes\Builder\BuilderClass.cs" />
+    <Compile Include="projects\classes\Builder\ConcreteBuilder.cs" />
+    <Compile Include="projects\classes\Builder\Hediye.cs" />
+    <Compile Include="projects\classes\Builder\HediyeGonder.cs" />
     <Compile Include="projects\classes\Proxy\IGorsel.cs" />
     <Compile Include="projects\classes\Proxy\Proxy.cs" />
     <Compile Include="projects\classes\Proxy\Resim.cs" />

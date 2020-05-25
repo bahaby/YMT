@@ -1,5 +1,7 @@
-﻿using System;
+﻿/*using System;
 
+namespace YMT.projects.classes.Builder
+{
  class KisilerConcreteBuilder: BuilderClass
 {
 	public KisilerConcreteBuilder()
@@ -30,3 +32,4 @@ class SonKazananBuilder : KisilerConcreteBuilder
     public override void SetKodu() => hediye.SetKodu = "896";
     public override void SetUrunAdi() => hediye.SetUrunAdi = "Xiaomi";
 }
+*/
