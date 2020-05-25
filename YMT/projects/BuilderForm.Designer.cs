@@ -1,4 +1,5 @@
-﻿namespace YMT.projects
+﻿
+namespace YMT.projects
 {
 	partial class BuilderForm
 	{
