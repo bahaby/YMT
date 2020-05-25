@@ -10,7 +10,7 @@ namespace YMT.projects.classes.Proxy
 {
     class Proxy:IGorsel
     {
-        Resim resim = null;
+        Resim resim= null;
         bool ResimYuklendi;
         PictureBox pb;
         string Dizin;

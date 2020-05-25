@@ -22,7 +22,7 @@ namespace YMT.projects
 		private string ad; // Çektiğimiz verileri tutacak değişkenleri tanımlıyoruz
 		private string tc;
 		private string musterino;
-		private string talep;
+		private int talep;
         
 
         private void FacadeForm_Load(object sender, EventArgs e)
@@ -32,14 +32,19 @@ namespace YMT.projects
 
         private void KrediCekbtn_Click(object sender, EventArgs e)
         {
-			ad = Adtxt.Text; // textBox'dan verileri çekiyoruz
+			ad = Adtxt.Text; // textBox'dan veriler alınıyor.
 			tc = Tctxt.Text;
 			musterino = MusteriNotxt.Text;
-			talep = CekilecekMiktartxt.Text;
+			talep = Convert.ToInt32(CekilecekMiktartxt.Text);
 
-			Facade fcd = new Facade(); // Facade sınıfından nesnemizi gerçekliyoruz
-			Tutarlbl.Text = fcd.KrediKullan( // Musteri bilgilerini yolluyoruz 
+			Facade fcd = new Facade(); // Facade sınıfından fcd nesenesini üretiyoruz
+			Tutarlbl.Text = fcd.KrediKullan( // müşteri bilgilerini iletiyoruz.
 			new Musteri { Ad = ad, TcNo = tc, MusteriNumarasi = musterino }, talep + " TL");
+		}
+
+        private void CekilecekMiktartxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+			e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);// keypres eventi ile sadece sayı girişi sağlandı
 		}
     }
 }

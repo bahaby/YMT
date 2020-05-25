@@ -2,10 +2,8 @@
 {
     class Banka
     {
-        /// <summary>
-        /// Kredi Çekilir.
-        /// </summary>
-        public bool KrediyiKullan(Musteri m, string talepEdilenMiktar)
+        
+        public bool KrediyiKullan(Musteri m, string talep)
         {
             return true;
         }

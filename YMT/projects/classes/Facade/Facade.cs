@@ -2,19 +2,12 @@
 {
     class Facade
     {
-        private MerkezBanka merkezbanka; // Sınıfları içermesini sağlıyoruz
-        private Kredi kredi;
-        private Banka banka;
-
-        public Facade()
-        {
-            banka = new Banka(); // Sınıfları örnekliyoruz
-            kredi = new Kredi();
-            merkezbanka = new MerkezBanka();
-        }
+        private MerkezBanka merkezbanka=new MerkezBanka(); // Sınıfları içermesini sağlıyoruz
+        private Kredi kredi= new Kredi();
+        private Banka banka=new Banka();
         public string KrediKullan(Musteri m,string talep) // Kredi kullanma durumunu kontrol ediyoruz
         {
-            if (merkezbanka.KaraListeKontrol(m.TcNo) && kredi.KrediKullanmaDurumu(m)) // Karaliste kontrolu yapıyoruz
+            if (merkezbanka.KaraListe(m.TcNo) && kredi.KrediKullanmaDurumu(m)) // Karaliste kontrolu yapıyoruz
             {
                 banka.KrediyiKullan(m, talep); // Kredi çektiriyoruz
                 return talep;

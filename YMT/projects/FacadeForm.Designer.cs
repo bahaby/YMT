@@ -60,6 +60,7 @@
             this.CekilecekMiktartxt.Name = "CekilecekMiktartxt";
             this.CekilecekMiktartxt.Size = new System.Drawing.Size(183, 30);
             this.CekilecekMiktartxt.TabIndex = 20;
+            this.CekilecekMiktartxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CekilecekMiktartxt_KeyPress);
             // 
             // MusteriNolbl
             // 
