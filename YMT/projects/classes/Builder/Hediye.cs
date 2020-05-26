@@ -13,8 +13,8 @@ namespace YMT.projects.classes.Builder
         public string Kazanan { get; set; }
         public override string ToString()
         {
-            System.Windows.Forms.MessageBox.Show("test");
+            System.Windows.Forms.MessageBox.Show($"{Kodu} numaralı {HediyeUrun} promosyonu {Kazanan} kişiye verilmiştir.");
             return "";
         }
-	}
+    }
 }

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Builder
 {
-	abstract class BuilderClass
-	{
+    abstract class BuilderClass
+    {
         protected Hediye hediye;
         public Hediye Hediye
         {
             get
-                {
+            {
                 return hediye;
-                }
+            }
         }
         public abstract void SetUrunAdi();
         public abstract void SetKodu();
