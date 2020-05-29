@@ -25,11 +25,7 @@ namespace YMT.projects
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			//Client entrepreneur = new Client(new ElegantClothesFactory());
-			//richTextBox1.Text = $"İş Adamı: {entrepreneur.DecribeYourClothes()}";
-
-			//Client student = new Client(new CasualClothesFactory());
-			//richTextBox1.Text = $"Öğrenci: {student.DecribeYourClothes()}";
+			
 		}
 	}
 }
