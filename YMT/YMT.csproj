@@ -95,7 +95,7 @@
     <Compile Include="projects\BuilderForm.Designer.cs">
       <DependentUpon>BuilderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="projects\classes\Adapter\ITarif.cs" />
+    <Compile Include="projects\classes\Adapter\IGoster.cs" />
     <Compile Include="projects\classes\Adapter\Malzeme.cs" />
     <Compile Include="projects\classes\Adapter\MasrafGoster.cs" />
     <Compile Include="projects\classes\Adapter\TarifGoster.cs" />

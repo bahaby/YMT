@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Adapter
 {
-	class MasrafGoster : ITarif
+	class MasrafGoster : IGoster
 	{
 		public String yazdir(String yemekAd)
 		{

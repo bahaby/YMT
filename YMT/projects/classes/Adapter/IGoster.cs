@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Adapter
 {
-	interface ITarif
+	interface IGoster
 	{
 		String yazdir(String yemekAd);
 	}
