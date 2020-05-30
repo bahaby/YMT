@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="projects\classes\AbstractFactory\Abstract Products\Shirt.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Abstract Products\Trousers.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Client.cs" />
+    <Compile Include="projects\classes\AbstractFactory\ClothesFactory.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Factories\CasualClothesFactory.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Factories\ElegantClothesFactory.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Products\DressShirt.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Products\Jeans.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Products\PoloShirt.cs" />
+    <Compile Include="projects\classes\AbstractFactory\Products\SuitTrousers.cs" />
     <Compile Include="projects\classes\Builder\BuilderClass.cs" />
     <Compile Include="projects\classes\Builder\KisilerConcreteBuilder.cs" />
     <Compile Include="projects\classes\Builder\DirectorClass.cs" />
@@ -85,7 +95,6 @@
     <Compile Include="projects\BuilderForm.Designer.cs">
       <DependentUpon>BuilderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="projects\classes\AbstractFactory\Test.cs" />
     <Compile Include="projects\classes\Adapter\ITarif.cs" />
     <Compile Include="projects\classes\Adapter\Malzeme.cs" />
     <Compile Include="projects\classes\Adapter\MasrafGoster.cs" />
@@ -109,7 +118,6 @@
     <Compile Include="projects\classes\Factory\PaymentFactory.cs" />
     <Compile Include="projects\classes\Factory\Pencil.cs" />
     <Compile Include="projects\classes\Factory\IProduct.cs" />
-    <Compile Include="projects\classes\Factory\Product.cs" />
     <Compile Include="projects\classes\Factory\ProductFactory.cs" />
     <Compile Include="projects\classes\Factory\Rent.cs" />
     <Compile Include="projects\classes\Prototype\Arcelik.cs" />

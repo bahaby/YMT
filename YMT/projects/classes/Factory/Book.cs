@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Factory
 {
-	class Book: Product, IProduct
+	class Book: IProduct
 	{
+		private int _quantity = 1;
+		public void AddQuantity()
+		{
+			this._quantity += 1;
+		}
+		public int Quantity()
+		{
+			return _quantity;
+		}
 		public String ProductName()
 		{
 			return "Book";
