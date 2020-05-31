@@ -18,30 +18,24 @@ namespace YMT.projects
 		{
 			InitializeComponent();
 		}
-
-		private string ad; // Çektiğimiz verileri tutacak değişkenleri tanımlıyoruz
-		private string tc;
-		private string musterino;
-		private int talep;
-        
-
         private void FacadeForm_Load(object sender, EventArgs e)
         {
-		
+			
 		}
-
-        private void KrediCekbtn_Click(object sender, EventArgs e)
+		string Ad;
+		string Tc;
+		string MusteriNo;
+		int Talep;
+		private void KrediCekbtn_Click(object sender, EventArgs e)
         {
-			ad = Adtxt.Text; // textBox'dan veriler alınıyor.
-			tc = Tctxt.Text;
-			musterino = MusteriNotxt.Text;
-			talep = Convert.ToInt32(CekilecekMiktartxt.Text);
+			Ad = Adtxt.Text; 
+			Tc = Tctxt.Text;
+			MusteriNo = MusteriNotxt.Text;
+			Talep = Convert.ToInt32(CekilecekMiktartxt.Text);
 
-			Facade fcd = new Facade(); // Facade sınıfından fcd nesenesini üretiyoruz
-			Tutarlbl.Text = fcd.KrediKullan( // müşteri bilgilerini iletiyoruz.
-			new Musteri { Ad = ad, TcNo = tc, MusteriNumarasi = musterino }, talep + " TL");
+			Facade facade = new Facade(); 
+			Tutarlbl.Text = facade.KrediKullan(new Musteri { Ad = Ad, TcNo = Tc, MusteriNumarasi = MusteriNo }, Talep + " TL");
 		}
-
         private void CekilecekMiktartxt_KeyPress(object sender, KeyPressEventArgs e)
         {
 			e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);// keypres eventi ile sadece sayı girişi sağlandı

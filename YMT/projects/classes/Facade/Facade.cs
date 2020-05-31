@@ -2,19 +2,19 @@
 {
     class Facade
     {
-        private MerkezBanka merkezbanka=new MerkezBanka(); // Sınıfları içermesini sağlıyoruz
+        private MerkezBanka merkezbanka=new MerkezBanka(); 
         private Kredi kredi= new Kredi();
         private Banka banka=new Banka();
-        public string KrediKullan(Musteri m,string talep) // Kredi kullanma durumunu kontrol ediyoruz
+        public string KrediKullan(Musteri m,string talep) 
         {
-            if (merkezbanka.KaraListe(m.TcNo) && kredi.KrediKullanmaDurumu(m)) // Karaliste kontrolu yapıyoruz
+            if (merkezbanka.KaraListe(m.TcNo) && kredi.KrediKullanmaDurumu(m)) 
             {
-                banka.KrediyiKullan(m, talep); // Kredi çektiriyoruz
+                banka.KrediyiKullan(m, talep); 
                 return talep;
             }
             else
             {
-                return "Kredi Kullanılamadı"; // Hata mesajı gösteriyoruz
+                return "Gereken şartlar karşılanmadı."; 
             }
         }
     }

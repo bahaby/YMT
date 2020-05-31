@@ -27,13 +27,15 @@ namespace YMT.projects
         private void button1_Click(object sender, EventArgs e)
         {
             IGorsel resim = new Resim();
-            resim.Goster(PictureBox, "C:\\Users\\Kinqw\\Pictures\\OrnekResim.jpg");
+            resim.Goster(PictureBox, "OrnekResim.jpg");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             IGorsel resim2 = new Proxy();
-            resim2.Goster(PictureBox, "C:\\Users\\Kinqw\\Pictures\\OrnekProxyResim.jpg");
+            resim2.Goster(PictureBox, "OrnekResim.jpg");
+            
+
         }
     }
 }

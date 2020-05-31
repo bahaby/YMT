@@ -34,7 +34,7 @@ namespace YMT.projects.classes.Proxy
 
             if (!ResimYuklendi)
             {
-                pb.ImageLocation = "C:\\Users\\Kinqw\\Pictures\\yukleniyor.png";
+                pb.ImageLocation = "yukleniyor.png";
             }
         }
     }
