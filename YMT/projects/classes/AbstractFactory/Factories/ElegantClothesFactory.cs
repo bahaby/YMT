@@ -15,7 +15,7 @@ namespace YMT.projects.classes.AbstractFactory.Factories
             return new DressShirt();
         }
 
-        public override Trousers CreateTrousers()
+        public override Trousers CreateTrousres()
         {
             return new SuitTrousers();
         }

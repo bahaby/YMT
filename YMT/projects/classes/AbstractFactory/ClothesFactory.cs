@@ -10,7 +10,6 @@ namespace YMT.projects.classes.AbstractFactory
     abstract class ClothesFactory
     {
         public abstract Shirt CreateShirt();
-        public abstract Trousers CreateTrousers();
-            
+        public abstract Trousers CreateTrousres();
     }
 }

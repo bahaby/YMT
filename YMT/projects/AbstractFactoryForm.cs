@@ -8,28 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using YMT.projects.classes.AbstractFactory;
+using YMT.projects.classes.AbstractFactory.Factories;
 
 namespace YMT.projects
 {
-	public partial class AbstractFactoryForm : Form
-	{
-		public AbstractFactoryForm()
-		{
-			InitializeComponent();
-		}
+    public partial class AbstractFactoryForm : Form
+    {
+        public AbstractFactoryForm()
+        {
+            InitializeComponent();
+        }
 
-		private void AbstractFactoryForm_Load(object sender, EventArgs e)
-		{
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Client girisimci = new Client(new ElegantClothesFactory());
+            girisimci.DecribeYourClothes();
+            richTextBox1.Text = $"Girişimci: {girisimci.DecribeYourClothes()}";
 
-		}
-
-		private void button1_Click(object sender, EventArgs e)
-		{
-			//Client entrepreneur = new Client(new ElegantClothesFactory());
-			//richTextBox1.Text = $"İş Adamı: {entrepreneur.DecribeYourClothes()}";
-
-			//Client student = new Client(new CasualClothesFactory());
-			//richTextBox1.Text = $"Öğrenci: {student.DecribeYourClothes()}";
-		}
-	}
+            Client ogrenci = new Client(new CasualClothesFactory());
+            ogrenci.DecribeYourClothes();
+            richTextBox1.Text = $"Girişimci: {ogrenci.DecribeYourClothes()}";
+        }
+    }
 }

@@ -7,7 +7,7 @@ using YMT.projects.classes.AbstractFactory.Abstract_Products;
 
 namespace YMT.projects.classes.AbstractFactory.Products
 {
-    class Jeans : Trousers
-    {
-    }
+	class Jeans : Trousers
+	{
+	}
 }

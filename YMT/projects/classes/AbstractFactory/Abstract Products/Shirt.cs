@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.AbstractFactory.Abstract_Products
 {
-    class Shirt
-    {
-    }
+	class Shirt
+	{
+	}
 }

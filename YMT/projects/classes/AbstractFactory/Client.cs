@@ -12,15 +12,15 @@ namespace YMT.projects.classes.AbstractFactory
         private readonly Shirt _shirt;
         private readonly Trousers _trousers;
 
-        public Client (ClothesFactory factory) 
+        public Client(ClothesFactory factory)
         {
             _shirt = factory.CreateShirt();
-            _trousers = factory.CreateTrousers();
+            _trousers = factory.CreateTrousres();
         }
 
         public string DecribeYourClothes()
         {
-            return $"Today I'm dressed in: {_shirt.GetType().Name} and {_trousers.GetType().Name}";
+            return $"Bugün giydiklerim: {_shirt.GetType().Name} ve {_trousers.GetType().Name}";
         }
     }
 }
