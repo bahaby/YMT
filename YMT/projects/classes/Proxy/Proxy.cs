@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -13,19 +14,19 @@ namespace YMT.projects.classes.Proxy
         Resim resim= null;
         bool ResimYuklendi;
         PictureBox pb;
-        string Dizin;
+        Image image;
        
         void ResimYukle(object o)
         {
             resim = new Resim();
-            resim.Goster(pb, Dizin);
+            resim.Goster(pb, image);
             ResimYuklendi = true;
         }
-        public void Goster(PictureBox pb, string Dizin)
+        public void Goster(PictureBox pb, Image image)
         {
             
             this.pb = pb;
-            this.Dizin = Dizin;
+            this.image = image;
 
             if (resim == null)
             {
@@ -34,7 +35,8 @@ namespace YMT.projects.classes.Proxy
 
             if (!ResimYuklendi)
             {
-                pb.ImageLocation = "yukleniyor.png";
+                Image loading = Properties.Resources.yukleniyor;
+                pb.Image=loading;
             }
         }
     }
