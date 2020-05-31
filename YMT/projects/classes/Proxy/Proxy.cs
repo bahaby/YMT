@@ -11,8 +11,8 @@ namespace YMT.projects.classes.Proxy
 {
     class Proxy:IGorsel
     {
-        Resim resim= null;
-        bool ResimYuklendi;
+        Resim resim;
+        bool ResimYuklendi=false;
         PictureBox pb;
         Image image;
        
@@ -28,12 +28,12 @@ namespace YMT.projects.classes.Proxy
             this.pb = pb;
             this.image = image;
 
-            if (resim == null)
+            if (resim==null)
             {
                 new System.Threading.Timer(new TimerCallback(ResimYukle), this, 2000, 0);
             }
 
-            if (!ResimYuklendi)
+            if (ResimYuklendi==false)
             {
                 Image loading = Properties.Resources.yukleniyor;
                 pb.Image=loading;

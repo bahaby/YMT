@@ -25,12 +25,7 @@ namespace YMT.projects
         }
         
         Image image=Properties.Resources.OrnekResim;
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            IGorsel resim = new Resim();
-            resim.Goster(PictureBox, image);
-        }
+        
         private void button2_Click(object sender, EventArgs e)
         {
             IGorsel resim2 = new Proxy();
