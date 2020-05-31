@@ -56,6 +56,11 @@
     <Compile Include="projects\classes\AbstractFactory\Products\Jeans.cs" />
     <Compile Include="projects\classes\AbstractFactory\Products\PoloShirt.cs" />
     <Compile Include="projects\classes\AbstractFactory\Products\SuitTrousers.cs" />
+    <Compile Include="projects\classes\Bridge\ComponentAbstraction.cs" />
+    <Compile Include="projects\classes\Bridge\ComponentImplementor.cs" />
+    <Compile Include="projects\classes\Bridge\NewModeComponentBuilder.cs" />
+    <Compile Include="projects\classes\Bridge\OldModelComponentBuilder.cs" />
+    <Compile Include="projects\classes\Bridge\RefinedComponentAbstraction.cs" />
     <Compile Include="projects\classes\Builder\BuilderClass.cs" />
     <Compile Include="projects\classes\Builder\KisilerConcreteBuilder.cs" />
     <Compile Include="projects\classes\Builder\DirectorClass.cs" />
@@ -101,7 +106,6 @@
     <Compile Include="projects\classes\Adapter\TarifGoster.cs" />
     <Compile Include="projects\classes\Adapter\Yemek.cs" />
     <Compile Include="projects\classes\Adapter\YemekListesi.cs" />
-    <Compile Include="projects\classes\Bridge\Test.cs" />
     <Compile Include="projects\classes\Facade\Banka.cs" />
     <Compile Include="projects\classes\Facade\Facade.cs" />
     <Compile Include="projects\classes\Facade\Kredi.cs" />
@@ -161,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="projects\AdapterForm.resx">
       <DependentUpon>AdapterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="projects\BridgeForm.resx">
+      <DependentUpon>BridgeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="projects\FacadeForm.resx">
       <DependentUpon>FacadeForm.cs</DependentUpon>

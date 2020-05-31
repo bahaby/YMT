@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace YMT.projects.classes.Bridge
 {
-	class Test
+	class RefinedComponentAbstraction : ComponentAbstraction
 	{
+		public override void ComponentBuilder()
+		{
+			_componentBuilder.ComponentBuilder();
+		}
 	}
 }

@@ -13,14 +13,23 @@ namespace YMT.projects
 {
 	public partial class BridgeForm : Form
 	{
+		ComponentAbstraction compBuilder;
 		public BridgeForm()
 		{
 			InitializeComponent();
+			compBuilder = new RefinedComponentAbstraction();
 		}
 
-		private void BridgeForm_Load(object sender, EventArgs e)
+		private void btnOld_Click(object sender, EventArgs e)
 		{
+			compBuilder._componentBuilder = new OldModelComponentBuilder();
+			compBuilder.ComponentBuilder();
+		}
 
+		private void btnNew_Click(object sender, EventArgs e)
+		{
+			compBuilder._componentBuilder = new NewModeComponentBuilder();
+			compBuilder.ComponentBuilder();
 		}
 	}
 }
